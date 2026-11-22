@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BallVisualProfile" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/BallVisualProfile.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/orbs/vampire_orb.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+profile_id = &"vampire"
+display_name = "Vampire"
+body_color = Color(0.42, 0.16, 0.67, 1)
+rim_color = Color(0.88, 0.58, 1, 1)
+eye_color = Color(0.96, 0.24, 0.78, 1)
+radius = 26.0
+glow = 0.74
+spin_speed = 5.5
+spin_friction = 1.15
+blink_interval = 1.0
+eye_scale = 0.43
+show_eye = false
+pattern = 3
+artwork = ExtResource("2")

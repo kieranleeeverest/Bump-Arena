@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BallVisualProfile" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/BallVisualProfile.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/orbs/fire_lava.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+profile_id = &"fire"
+display_name = "Fire"
+body_color = Color(0.84, 0.19, 0.12, 1)
+rim_color = Color(1, 0.71, 0.34, 1)
+eye_color = Color(1, 0.42, 0.12, 1)
+radius = 26.0
+glow = 0.78
+spin_speed = 8.0
+spin_friction = 0.75
+blink_interval = 1.0
+eye_scale = 0.44
+show_eye = false
+pattern = 2
+artwork = ExtResource("2")

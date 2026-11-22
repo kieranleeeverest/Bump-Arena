@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BallVisualProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/BallVisualProfile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+profile_id = &"refresh"
+display_name = "Refresh"
+body_color = Color(0.36, 0.67, 0.38, 1)
+rim_color = Color(0.85, 1, 0.63, 1)
+eye_color = Color(0.52, 0.95, 0.35, 1)
+radius = 26.0
+glow = 0.68
+spin_speed = 6.5
+spin_friction = 1.0
+blink_interval = 1.0
+eye_scale = 0.42
+show_eye = true
+pattern = 4

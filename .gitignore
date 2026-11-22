@@ -1,0 +1,11 @@
+*.exe
+*.zip
+*.wasm
+*.pck
+*.tar.gz
+*.blend
+tools/
+web_export/
+backups/
+dist/
+node_modules/

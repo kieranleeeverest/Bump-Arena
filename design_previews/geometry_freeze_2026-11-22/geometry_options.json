@@ -1,0 +1,28 @@
+{
+  "design_size": [540, 960],
+  "player_radius": 18,
+  "options": [
+    {
+      "id": "A",
+      "name": "舒展",
+      "field_corners": [[65, 205], [270, 170], [475, 205], [475, 725], [270, 760], [65, 725]],
+      "side_tower_centers": [[76, 205], [464, 205], [76, 725], [464, 725]],
+      "main_tower_centers": [[270, 170], [270, 760]],
+      "side_tower_radius": 18,
+      "main_tower_radius": 22,
+      "slope_degrees": 9.7,
+      "playable_area_pixels": 227550
+    },
+    {
+      "id": "B",
+      "name": "平衡",
+      "field_corners": [[65, 218], [270, 170], [475, 218], [475, 712], [270, 760], [65, 712]],
+      "side_tower_centers": [[76, 218], [464, 218], [76, 712], [464, 712]],
+      "main_tower_centers": [[270, 170], [270, 760]],
+      "side_tower_radius": 18,
+      "main_tower_radius": 22,
+      "slope_degrees": 13.2,
+      "playable_area_pixels": 222220
+    }
+  ]
+}

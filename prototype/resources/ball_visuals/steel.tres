@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BallVisualProfile" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/BallVisualProfile.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/orbs/durable_iron_orb.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+profile_id = &"steel"
+display_name = "Meteor Iron"
+body_color = Color(0.59, 0.68, 0.77, 1)
+rim_color = Color(0.94, 0.98, 1, 1)
+eye_color = Color(0.35, 0.70, 0.93, 1)
+radius = 26.0
+glow = 0.34
+spin_speed = 5.0
+spin_friction = 1.7
+blink_interval = 1.0
+eye_scale = 0.42
+show_eye = false
+pattern = 1
+artwork = ExtResource("2")
