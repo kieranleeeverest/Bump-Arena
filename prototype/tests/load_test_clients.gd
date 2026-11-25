@@ -4,7 +4,7 @@ extends SceneTree
 # 不需要真人——4 人局和 8 人观战的成本全在这里量。
 #
 # 用法：
-#   godot --headless --path prototype --script res://tools/load_test_clients.gd \
+#   godot --headless --path prototype --script res://tests/load_test_clients.gd \
 #     -- --url=ws://127.0.0.1:9182 --clients=8 --seconds=45
 #
 # 输出：每 5 秒一行 CLIENT_STAT，结束时一行 LOAD_SUMMARY（含每客户端收发字节）。
