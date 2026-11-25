@@ -40,7 +40,7 @@ func _chrome() -> void:
 	_text("12秒 · %s行动" % ("蓝方" if local_side == 0 else "红方"), 211, 63, 118, 10, team_color)
 	_round_icon(UI_LAYOUT.MENU_CENTER, "menu")
 	_box(UI_LAYOUT.CHAT_RECT, 0.48, Color(0.7, 0.62, 0.82, 0.30), 21)
-	_text("◌  聊天…", 46, 899, 158, 12, MUTED)
+	_text("o  聊天…", 46, 899, 158, 12, MUTED)
 	_round_icon(UI_LAYOUT.MUSIC_CENTER, "music")
 	_round_icon(UI_LAYOUT.EMOJI_CENTER, "emoji")
 
@@ -54,7 +54,7 @@ func _round_icon(center: Vector2, kind: String) -> void:
 		"menu":
 			for offset in [-5.0, 0.0, 5.0]: draw_line(center + Vector2(-7, offset), center + Vector2(7, offset), INK, 1.5)
 		"music":
-			_text("♫", center.x - 17, center.y + 6, 34, 20, BLUE)
+			_text("音", center.x - 17, center.y + 6, 34, 20, BLUE)
 		"emoji":
 			_smile(center, 14)
 
@@ -189,7 +189,7 @@ func _music_panel() -> void:
 	_box(Rect2(138, 708, 368, 204), 0.96, Color(BLUE.r, BLUE.g, BLUE.b, 0.50), 19)
 	_text("房间共享音乐", 158, 741, 330, 18, INK)
 	_text("正在播放 · 银河漫游（演示曲目）", 157, 767, 330, 12, MUTED)
-	_button("Ⅱ  暂停", Rect2(157, 778, 147, 35), true)
+	_button("2  暂停", Rect2(157, 778, 147, 35), true)
 	_button("选择歌曲", Rect2(318, 778, 168, 35))
 	_text("房间共享 · 待接入", 158, 839, 304, 11, BLUE)
 	_text("个人音量", 158, 878, 90, 12, MUTED)

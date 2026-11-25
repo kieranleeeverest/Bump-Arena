@@ -10,8 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Cosmic Bump Arena"
-run/main_scene="res://main.tscn"
+config/name="怼球复刻"
+run/main_scene="res://app_shell.tscn"
+run/max_fps=60
 config/features=PackedStringArray("4.7")
 
 [display]
@@ -19,7 +20,6 @@ config/features=PackedStringArray("4.7")
 window/size/viewport_width=540
 window/size/viewport_height=960
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep"
 window/handheld/orientation=1
 
 [rendering]

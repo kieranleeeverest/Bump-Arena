@@ -7,12 +7,14 @@ const PATHS := [
 	"res://assets/ui_preview/avatars/red_1.png",
 	"res://assets/ui_preview/avatars/red_2.png"
 ]
-const NAMES := PackedStringArray(["星澜", "北辰", "绯月", "赤霄"])
+const NAMES := ["星澜", "北辰", "绯月", "赤霄"]
 
 static func load_circular_textures() -> Array[Texture2D]:
 	var output: Array[Texture2D] = []
 	for path in PATHS:
-		var source: Image = Image.load_from_file(path)
+		# Use Godot's imported texture so these portraits are available in Web builds.
+		var imported: Texture2D = load(path)
+		var source: Image = imported.get_image() if imported != null else null
 		if source == null or source.is_empty():
 			output.append(null)
 			continue

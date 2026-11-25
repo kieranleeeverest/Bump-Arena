@@ -1,11 +1,20 @@
 extends Node2D
 class_name ArenaVisual
 
+const SettingsStore = preload("res://scripts/data/SettingsStore.gd")
+
 @export var theme: ArenaTheme
 @export var layout: ArenaDefinition
 @export var stage_rect: Rect2 = Rect2(24.0, 126.0, 492.0, 500.0)
 
 var pulse_clock := 0.0
+
+# Pure visual helper: reduced motion holds the border pulse steady.
+# Does not touch pulse_clock accumulation or any gameplay/geometry logic.
+func _border_pulse() -> float:
+	if SettingsStore.reduce_motion:
+		return 0.86
+	return 0.86 + 0.14 * sin(pulse_clock * 1.8)
 
 func _process(delta: float) -> void:
 	pulse_clock += delta
@@ -20,7 +29,7 @@ func _draw() -> void:
 		var fit_scale := minf(field_viewport.size.x / layout.field_size.x, field_viewport.size.y / layout.field_size.y)
 		field_size = layout.field_size * fit_scale
 	var field := Rect2(field_viewport.get_center() - field_size * 0.5, field_size)
-	var pulse := 0.86 + 0.14 * sin(pulse_clock * 1.8)
+	var pulse := _border_pulse()
 	draw_rect(stage_rect, Color(0.0, 0.0, 0.0, 0.35), true)
 	draw_rect(field, theme.floor_color, true)
 	draw_rect(field.grow(-7.0), theme.inset_color, true)
