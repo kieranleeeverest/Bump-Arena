@@ -25,3 +25,6 @@ node_modules/
 diagnostics/
 *.env
 work/
+
+# Godot 的 import/editor 缓存：每次打开/导出都会重写，不入库
+.godot/
