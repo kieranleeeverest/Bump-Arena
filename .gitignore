@@ -4,8 +4,24 @@
 *.pck
 *.tar.gz
 *.blend
-tools/
+tools/*
+!tools/web_test_gateway.js
+!tools/room_music.js
+!tools/room_music_web.js
+!tools/start_music_local.js
+!tools/music_file_http.js
+!tools/public_music.json
+!tools/update_music_catalog.js
+!tools/perf_web_ab.js
+!tools/run_invite_window_test.js
+!tools/start_local_web_test.ps1
+music/*
+!music/update_music_catalog.cmd
 web_export/
 backups/
 dist/
 node_modules/
+# 本地密钥与邀请码：绝不入库（server_config.json 里是明文 48 位邀请码）
+diagnostics/
+*.env
+work/
